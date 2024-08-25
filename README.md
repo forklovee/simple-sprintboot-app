@@ -1,4 +1,4 @@
-# Simple Spring Boot App
+# 🍃Simple Spring Boot App
 Simple web app that manages students with implemented RESTful API.
 
 ## Used dependencies
