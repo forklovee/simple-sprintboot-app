@@ -28,4 +28,12 @@ public class StudentController {
         studentService.addNewStudent(student);
     }
 
+    //Path means that you input the id after the last slash,
+    //it acts as the argument for the request
+    //
+    //ex. http://localhost:8080/api/v1/student/1
+    @DeleteMapping(path = "{studentID}")
+    public void deleteStudent(@PathVariable("studentID") Long Id){
+        studentService.deleteStudent(Id);
+    }
 }
