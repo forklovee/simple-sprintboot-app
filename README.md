@@ -29,5 +29,5 @@ Database name is "student" (lowcaps).<br>
 Change username and password to yours, if needed (it probably is needed).<br>
 
 ## Credits
-App created with a huge help of <a href=(https://www.youtube.com/watch?v=9SGDpanrc8U)>Amigoscode's Course</a> <br>
+App created with a huge help of <a href="https://www.youtube.com/watch?v=9SGDpanrc8U">Amigoscode's Course</a>. <br><br>
 It's not 1:1, cause I changed few things I considered weird.
