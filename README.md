@@ -12,10 +12,11 @@ Downloaded via <a href=https://start.spring.io/>Spring Initializr</a>
 ## Sending Requests
 Usage of software like Postman is advised.
 ### GET
-Get request is commited while visiting:
-<code>http://localhost:8080/api/v1/student</code><br>
-It prints out all existing students on the website.
+Prints out all students.<br><br>
+<b>address: http://localhost:8080/api/v1/student</code></b>
 ### POST
+Creates new student.<br><br>
+<b>address: http://localhost:8080/api/v1/student</b><br><br>
 POST request needs a body like this:<br>
 <code>{
     "firstName": "Solid",
@@ -25,15 +26,16 @@ POST request needs a body like this:<br>
 }
 </code>
 ### PUT
-PUT request takes arguments entered in adress: <br><br>
-<code>http://localhost:8080/api/v1/student/{id_to_update}?firstName=Alan&surname=Wake&email=alan.wake@outlook.com</code> <br><br>
+Updates student of given id.
+<br><br>
+<b>address: http://localhost:8080/api/v1/student/{id_to_update}?firstName=Alan&surname=Wake&email=alan.wake@outlook.com</b><br><br>
 Replace {id_to_update} with id of a student you want to update. <br>
 Arguments firstName, surname and email are optional.
 
 ### DELETE
-DELETE request takes an id of student to delete, entered in address: <br><br>
-<code>http://localhost:8080/api/v1/student/{id_to_delete}</code>
+Deletes student of given id.
 <br><br>
+<b>address: http://localhost:8080/api/v1/student/{id_to_delete}</b><br><br>
 Replace {id_to_delete} with id of a student you want to delete. <br>
 
 ## Database
