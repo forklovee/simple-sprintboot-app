@@ -9,11 +9,13 @@ Downloaded via <a href=https://start.spring.io/>Spring Initializr</a>
   <li>PostgreSQL Driver</li>
 </ul>
 
-## Requests
-As stated above, all basic RESTful API elements are present, meaning: GET, POST, PUT, DELETE.<br>
-Usage of Postman is greatly advised, but you can do it any other way, no judging :).<br>
-
-## Request Body Example
+## Sending Requests
+Usage of software like Postman is advised.
+### GET
+Get request is commited while visiting <code>http://localhost:8080/api/v1/student</code>.<br>
+It prints out all existing students.
+### POST
+POST request needs a body like this:<br>
 <code>{
     "firstName": "Solid",
     "surname": "Snake",
@@ -21,6 +23,8 @@ Usage of Postman is greatly advised, but you can do it any other way, no judging
     "dateOfBirth": "1985-05-12"
 }
 </code>
+### DELETE
+DELETE request takes an id of student to delete, entered in address: <code>http://localhost:8080/api/v1/student/{id_to_delete}</code>
 
 ## Database
 I used PostgreSQL, the database needs to be set up manually.<br>
