@@ -1,5 +1,6 @@
 package com.forklovee.dbapp.student;
 
+import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -33,7 +34,16 @@ public class StudentController {
     //
     //ex. http://localhost:8080/api/v1/student/1
     @DeleteMapping(path = "{studentID}")
-    public void deleteStudent(@PathVariable("studentID") Long Id){
-        studentService.deleteStudent(Id);
+    public void deleteStudent(@PathVariable("studentID") Long id){
+        studentService.deleteStudent(id);
+    }
+
+    @PutMapping(path = "{studentID}")
+    public void updateStudent(
+            @PathVariable("studentID") Long id,
+            @RequestParam(required = false) String firstName,
+            @RequestParam(required = false) String surname,
+            @RequestParam(required = false) String email) {
+        studentService.updateStudent(id, firstName, surname, email);
     }
 }
